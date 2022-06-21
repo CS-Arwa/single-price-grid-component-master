@@ -1,0 +1,148 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --darker-Cyan: hsl(179, 62%, 47%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Grey: hsl(204, 43%, 93%);
+    --Gryish-Blue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background: var(--Light-Grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 3em;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 1px 0px 5px 1px var(--Gryish-Blue);
+    margin: 5em 10em;
+    width: 800px;
+}
+
+.white-background {
+    background: white;
+    padding: 2em;
+    border-radius: 5px 5px 0px 0px;
+}
+
+h1 {
+    color: var(--Cyan);
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: var(--Bright-Yellow);
+    margin-bottom: 25px;
+}
+
+.white-background>p {
+    color: var(--Gryish-Blue);
+    line-height: 1.5;
+    padding-right: 11em;
+}
+
+.bottom-content {
+    display: flex;
+}
+
+.left-blue {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    background: var(--Cyan);
+    color: var(--Light-Grey);
+    padding: 35px;
+}
+
+h3 {
+    margin-bottom: 15px;
+}
+
+.left-blue>p {
+    margin-bottom: 15px;
+}
+
+span {
+    font-size: 40px;
+}
+
+.left-blue>a {
+    background: var(--Bright-Yellow);
+    padding: 1em 5em;
+    margin: 5px;
+    align-items: center;
+    color: var(--Light-Grey);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px 0px rgb(0 0 0 / 20%);
+}
+
+.right-blue {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+    padding: 35px;
+    background: var(--darker-Cyan);
+    color: var(--Light-Grey);
+}
+
+.right-blue>p {
+    line-height: 1.5;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+    position: relative;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .card {
+        width: 370px;
+        /**margin: 5em 1em;**/
+        margin: -3em;
+    }
+
+    .white-background>p {
+        padding-right: 0;
+    }
+
+    .bottom-content {
+        flex-direction: column;
+    }
+
+    .left-blue>a {
+        padding: 1em 6em;
+    }
+
+    footer {
+        margin: 4em;
+    }
+
+
+}
